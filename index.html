@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dungeon game</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="damageSound">
+    <source src="./public/sounds/damage.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудиотег.
+</audio>
+
+<audio id="knifeSound">
+    <source src="./public/sounds/knifeSound.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудиотег.
+</audio>
+
+<audio id="mainTheme">
+    <source src="./public/sounds/mainTheme.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудиотег.
+</audio>
+
+<audio id="spawnSound">
+    <source src="./public/sounds/spawn.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудиотег.
+</audio>
+
+<audio id="stepSound">
+    <source src="./public/sounds/step.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудиотег.
+</audio>
+
+<div id="homepage" class="homepage">
+    <div class="messages">
+        <div class="questionMessage" id="questionMessage">Выбери уровень</div>
+    </div>
+    <div class="levels">
+        <a id="firstLevel" class="level">Уровень 1</a>
+        <a id="secondLevel" class="level">Уровень 2</a>
+    </div>
+    <div class="leaderboard">
+        <div class="leader-title" id="leader-title">Таблица рекордов:</div>
+        <div class="leaders">
+            <div id="lead1" class="leader">
+            </div>
+            <div id="lead2" class="leader">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="registration" class="registration">
+    <div class="helloMessage">Добро пожаловать в Dungeon. Представься</div>
+    <form id="nicknameForm">
+        <div class="inputName">
+            <input class="inputForm" type="text" id="inputForm" placeholder="Billy Herrington" required>
+            <a id="submitForm" class="level">Отправить</a>
+        </div>
+    </form>
+</div>
+
+<div id="gameWin" class="gameWin"></div>
+<div id="gameOver" class="gameOver"></div>
+
+<div id="game" class="game">
+    <canvas class="infoCanvas" id="infoCanvas"></canvas>
+    <canvas id="gameCanvas"></canvas>
+</div>
+
+<script type="module" src="src/main.ts"></script>
+</body>
+</html>

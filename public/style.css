@@ -1,0 +1,139 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: white;
+    font-family: 'tiny5', cursive;
+    font-size: 36px;
+    gap: 50px;
+}
+
+.gameWin, .gameOver{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: white;
+    font-family: 'tiny5', cursive;
+    gap: 50px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.levels{
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.level{
+    border: 5px solid white;
+    padding: 30px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #D3D3D3;
+}
+
+.questionMessage{
+    font-size: 48px;
+}
+
+.game {
+    display: flex;
+    position: fixed;
+    gap: 15px;
+    image-rendering: pixelated;
+    visibility: hidden;
+}
+
+.infoCanvas {
+    image-rendering: pixelated;
+}
+
+.registration{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: white;
+    font-family: 'tiny5', cursive;
+    gap: 50px;
+    font-size: 30px;
+}
+
+.inputName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputForm{
+    width: 800px;
+    height: 30px;
+    font-size: 26px;
+    font-family: 'tiny5', cursive;
+}
+
+.helloMessage{
+    font-size: 56px;
+}
+
+.leaderboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+}
+
+.leader-title{
+    font-size: 36px;
+}
+
+.leaders{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 800px;
+}
+
+.leader{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    width: 800px;
+}
